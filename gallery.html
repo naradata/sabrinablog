@@ -7,12 +7,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <h1 class="site-title">gallery</h1>
-    <p>Photos coming soon.</p>
-    <nav class="links">
-      <a href="index.html">home</a>
+  <header class="page-header">
+    <h1 class="site-title small"><a href="index.html">sabrina081476</a></h1>
+    <nav class="page-nav">
+      <a class="side-link" href="index.html">home</a>
+      <span class="page-title">gallery</span>
+      <a class="side-link" href="posts.html">posts</a>
     </nav>
-  </main>
+  </header>
+
+  <main class="gallery-grid" id="gallery-grid"></main>
+
+  <script src="gallery.js"></script>
+  <script>
+    const grid = document.getElementById("gallery-grid");
+    for (const filename of GALLERY) {
+      const img = document.createElement("img");
+      img.src = "images/gallery/" + encodeURIComponent(filename);
+      img.alt = filename.replace(/\.[^.]+$/, "");
+      img.loading = "lazy";
+      grid.appendChild(img);
+    }
+  </script>
 </body>
 </html>

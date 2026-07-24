@@ -122,3 +122,25 @@ a.page-title:hover {
   max-width: 30em;
   line-height: 1.5;
 }
+
+/* --- gallery --- */
+
+.gallery-grid {
+  columns: 3;
+  column-gap: 12px;
+  max-width: 1000px;
+  margin: 48px auto 0;
+  padding: 0 24px 64px;
+}
+
+.gallery-grid img {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 700px) {
+  .gallery-grid {
+    columns: 2;
+  }
+}
