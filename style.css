@@ -117,11 +117,6 @@ a.page-title:hover {
   text-underline-offset: 6px;
 }
 
-.post-excerpt {
-  margin: 0;
-  max-width: 34em;
-}
-
 .post-body {
   padding-left: 16px;
   max-width: 30em;
