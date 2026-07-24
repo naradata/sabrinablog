@@ -44,3 +44,80 @@ body {
 .links a:hover {
   text-decoration: underline;
 }
+
+/* --- inner pages (posts, gallery, single post) --- */
+
+.page-header {
+  text-align: center;
+  padding-top: 28px;
+}
+
+.site-title.small {
+  font-size: 1.5rem;
+}
+
+.site-title.small a {
+  color: #e8140c;
+  text-decoration: none;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 4px;
+}
+
+.page-nav .side-link {
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+.page-nav .side-link:hover {
+  text-decoration: underline;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.post-list,
+.post-page {
+  max-width: 620px;
+  margin: 64px auto 0;
+  padding: 0 24px 64px;
+}
+
+.post-preview {
+  margin-bottom: 56px;
+}
+
+.post-title {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin: 0 0 12px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.post-title a {
+  color: #000000;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.post-excerpt {
+  margin: 0;
+  max-width: 34em;
+}
+
+.post-body {
+  padding-left: 16px;
+  max-width: 30em;
+  line-height: 1.5;
+}
