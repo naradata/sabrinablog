@@ -11,6 +11,13 @@
 
 const POSTS = [
   {
+    id: "godsend",
+    title: "Godsend",
+    body: `
+I began playing the game at 6 years old, when I had finally learned how to climb atop the counter and reach for the cookie jar that my mother made so difficult to reach, and she would scold me harshly amidst my thievery, hands in the jar, eyes wide open like a deer in headlights, crumbs piling in my lap. I was messy and lazy at first, as that’s usually how it is when you start something new. My mother, however, was practically a veteran at this game. So serious, pragmatic and intentional. She owned a private ketamine therapy practice, which was quite taboo at the time until she cured a man who loved alcohol so much he was willing to sacrifice everything for it. She corrected his ways and he called her a “godsend”.
+`
+  },
+  {
     id: "indie-journalists",
     title: "Indie Journalists Against Big Interviewees",
     body: `
