@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sabrina081476</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="site-title small"><a href="index.html">sabrina081476</a></h1>
+    <nav class="page-nav">
+      <a class="side-link" href="index.html">home</a>
+      <a class="page-title" href="posts.html">posts</a>
+      <a class="side-link" href="gallery.html">gallery</a>
+    </nav>
+  </header>
+
+  <main class="post-page">
+    <article>
+      <h2 class="post-title" id="post-title"></h2>
+      <div class="post-body" id="post-body"></div>
+    </article>
+  </main>
+
+  <script src="posts.js"></script>
+  <script>
+    const id = new URLSearchParams(location.search).get("id");
+    const post = POSTS.find(p => p.id === id);
+    const titleEl = document.getElementById("post-title");
+    const bodyEl = document.getElementById("post-body");
+    if (post) {
+      document.title = post.title + " — sabrina081476";
+      titleEl.textContent = post.title;
+      for (const paragraph of post.body.trim().split(/\n\s*\n/)) {
+        const p = document.createElement("p");
+        p.textContent = paragraph;
+        bodyEl.appendChild(p);
+      }
+    } else {
+      titleEl.textContent = "Post not found";
+      const p = document.createElement("p");
+      p.textContent = "This post doesn't exist. Head back to posts to see what's here.";
+      bodyEl.appendChild(p);
+    }
+  </script>
+</body>
+</html>

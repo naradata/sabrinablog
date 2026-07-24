@@ -16,14 +16,23 @@
     </nav>
   </header>
 
-  <main class="post-list">
-    <article class="post-preview">
-      <h2 class="post-title"><a href="post-one.html">Post one</a></h2>
-    </article>
+  <main class="post-list" id="post-list"></main>
 
-    <article class="post-preview">
-      <h2 class="post-title"><a href="post-two.html">Post two</a></h2>
-    </article>
-  </main>
+  <script src="posts.js"></script>
+  <script>
+    const list = document.getElementById("post-list");
+    for (const post of POSTS) {
+      const article = document.createElement("article");
+      article.className = "post-preview";
+      const heading = document.createElement("h2");
+      heading.className = "post-title";
+      const link = document.createElement("a");
+      link.href = "post.html?id=" + encodeURIComponent(post.id);
+      link.textContent = post.title;
+      heading.appendChild(link);
+      article.appendChild(heading);
+      list.appendChild(article);
+    }
+  </script>
 </body>
 </html>
