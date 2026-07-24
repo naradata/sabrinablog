@@ -1,5 +1,6 @@
 // All photos shown on the gallery page, in this order.
-// To add a photo: drop it in images/gallery and add its filename here.
+// To add a photo: drop it in images/gallery, add its filename here,
+// then run:  py -3 make_thumbs.py  (creates the small fast-loading copy)
 // To remove or reorder: edit this list.
 const GALLERY = [
   "9a99f3d552bbc53bc07ccd20b06e74c1.jpg",

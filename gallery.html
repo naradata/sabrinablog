@@ -22,11 +22,13 @@
   <script>
     const grid = document.getElementById("gallery-grid");
     for (const filename of GALLERY) {
+      const link = document.createElement("a");
+      link.href = "images/gallery/" + encodeURIComponent(filename);
       const img = document.createElement("img");
-      img.src = "images/gallery/" + encodeURIComponent(filename);
+      img.src = "images/gallery-thumbs/" + encodeURIComponent(filename);
       img.alt = filename.replace(/\.[^.]+$/, "");
-      img.loading = "lazy";
-      grid.appendChild(img);
+      link.appendChild(img);
+      grid.appendChild(link);
     }
   </script>
 </body>
