@@ -84,6 +84,12 @@ body {
   font-size: 3rem;
   font-weight: bold;
   line-height: 1;
+  color: #000000;
+  text-decoration: none;
+}
+
+a.page-title:hover {
+  text-decoration: underline;
 }
 
 .post-list,
