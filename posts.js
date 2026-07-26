@@ -11,6 +11,13 @@
 
 const POSTS = [
   {
+    id: "same-iq",
+    title: "'I Bet They Have the Same IQ Too. LOLZ!'",
+    body: `
+This conversation is retarded because you treat intelligence as something of high value or importance but in the real world intelligence doesn't matter to anybody or anything. An employer doesn't ask for your IQ on a resume and if they do, they will hardly be impressed by it if another candidate has previous experience that you do not have. A smart person sits in their room all day and ruminates over every potential problem that could come about in their life so they can have the solution for when it inevitably (and they believe it is inevitable out of delusion) comes. A smart person is neurotic, and gets so trapped within their neuroticism that they are allowed nothing free in their life. The person who goes to law school for 10+ years and is millions of dollars in debt spends the first few years of his career filing paperwork and being treated as "the coffee-boy". The person who doesn't know the difference between "your" and "you're" can socialize well enough that they are millionaires before the age of 35 and are on the street wearing a blue button up shirt, coffee in hand, walking into Goldman Sachs. The lawyer and the stock broker are equally as idiotic as they are intelligent and the real world doesn't care.
+`
+  },
+  {
     id: "indie-journalists",
     title: "Indie Journalists Against Big Interviewees",
     body: `
