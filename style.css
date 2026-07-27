@@ -45,6 +45,23 @@ body {
   text-decoration: underline;
 }
 
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: -8px;
+}
+
+.socials a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
 /* --- inner pages (posts, gallery, single post) --- */
 
 .page-header {
