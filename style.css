@@ -120,6 +120,34 @@ a.page-title:hover {
   margin-bottom: 56px;
 }
 
+.post-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.post-heading .post-title {
+  margin-bottom: 0;
+}
+
+.translate-btn {
+  font-family: inherit;
+  font-size: 0.7rem;
+  color: #000000;
+  background: none;
+  border: 1px solid #999999;
+  border-radius: 3px;
+  padding: 2px 8px;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.translate-btn:hover {
+  background: #f0f0f0;
+}
+
 .post-title {
   font-size: 1.4rem;
   font-weight: bold;
