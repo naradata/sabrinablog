@@ -38,16 +38,6 @@ January 18
 January 27
 
 22:19- I wasn't really, because tonight I found myself to be in the same bed with him. He was on top of me and holding my arms down gently. He leans closely towards me, our skin is touching and he softly whispers a promise to never murder me, and I wholeheartedly believe him. He asks me if I know how to avoid getting hurt when in the face of a human that acts as a predator. I ask him how. He explains that when humans become predators, they are no different than wild animals. If you lie still, no one will notice you. I ask him if the world is like this.
-
-April 18
-
-Today I was standing on the street outside of my apartment. The sky almost looked purple, and it was starting to rain. I am frustrated because there is this box I have outside of my apartment that I have not moved yet, even though I keep telling myself I need to. I don't remember what was on my mind at the time, but we can safely assume it was something I had made up to be stressed about and there was no reason for me to feel so intense. Especially after reaching down to the box, only to find the items are actually fresh, folded laundry. And then I remember that I recently did laundry, and I feel a bit of relief.
-
-I hate the rain and I want to smoke a cigarette before it becomes impossible to, so I run to the roof of my building. My friend Artem is waiting for me. He is a professional Counter-Strike player from Ukraine. We are smoking a cigarette together and I feel a bit flustered because we recently had slept together (and everybody knew), and we hadn't talked about it yet. Neither of us really wanted to though, and I don't think it necessarily mattered in that moment. I just wanted to smoke a cigarette.
-
-Later that night we go to a movie screening, and a lot of his Counter-Strike pro player friends were there. He is friends with an awper from Poland named… Roland. I particularly like him and try to introduce myself but completely and totally embarrass myself. I say "Cześć" and then quickly correct myself as I am using the informal version of "Hello" so I say "Przepraszam, dzień dobry" and he finds it amusing. I wonder if he found my pronunciation good, but I don't have time to think about it because him and I are both running late to the screening and rushing to our seats.
-
-I make it in time, and am sitting with my friends. One of them drops their vape that they secretly smuggled into the theater, so my friends are frantically turning on their phone flashlights and I am helping them find the vape. I poke my head up only to see everybody in the theater looking at us, whispering, and even filming us on their phones. I am mortified.
 `
   },
   {
