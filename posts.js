@@ -21,7 +21,12 @@ So, we have finally moved in together and I have my PC set up in a beautiful roo
 James comes home from his 3 month work trip, and although I am excited to see him, Charlie is still here. I know James would not be mad about Charlie, but I haven't yet explained to Charlie that I am married. James walks in my room and doesn't even look at Charlie. In fact- he doesn't even look at me. He doesn't need to, to know what I have done while he was away.
 
 When James and I are later in private, he has his MacBook open to a markdown file in VS Code titled "Angela" (the name he refers to me as) and he writes of his frustration towards me and my actions but how quickly it dissolves and how he cannot stop forgiving. He gives me a green letter and tells me it is a breakup letter. Again, he cannot look me in the eyes. He tells me that he was proud of me when I was a prostitute, and was able to figure things out. He reminds me of the time I had to pay for a hospital bill, and how I was able to pay for it. I tell him that I have a retail job now, and this is true. He is still disappointed and doesn't seem to care. He calls me a "sellout".
-
+`
+  },
+  {
+    id: "after-sellout",
+    title: "After Sellout",
+    body: `
 January 14
 
 10:50- I was outside on a huge field, it is winter so there was a little ice rink from the lake. And so I was on the ice rink skating and listening to "Last Dance" by Donna Summer because Mone Chiba had recently done a routine to the same song, and it quickly became one of my favorite routines. I was never self conscious when I skated myself, which I find weird now because I am often quite neurotic about my performance. But for some reason my mind always returns to ice skating, and here I was on the rink with the confidence of a killer seemingly out of nowhere. I just wanted to listen to music and skate, and not care what anybody thought of me at the time and I remember repeating this mantra in my head.
