@@ -11,6 +11,41 @@
 
 const POSTS = [
   {
+    id: "sellout",
+    title: "Sellout",
+    body: `
+James has a beautiful home that I have moved into ever since we got married. He has a gold wedding band, but I cannot remember what mine looks like. I met James when I was 22, him 39. We met in a hotel room, he was a bit shorter than I expected but much more handsome than his pictures. He gave me $2000 in cash and I made sure to make it worth his time. We talked a lot though, he seemed to see me as a real person more than a prostitute, and I appreciated that, although we both knew what this was. However, as time went on the hours added up and it just seemed to make the most sense to get married. I would live in his house, and no matter what I would always have money. Money to do things. Money to make myself feel important in any way I wanted, because money can truly buy anything. Which meant I wouldn't need him for anything emotional- in fact, he married me under the assumption that neither of us would be faithful to each other and that was ok.
+
+So, we have finally moved in together and I have my PC set up in a beautiful room with the perfect stain of wood for the floors. My desk and all other furniture match it exactly… not even off by a tint. I have a large bed and a large window but I am mostly confined to my room. This is by my own doing. At some point, Charlie comes over from time to time and we like to lay on my bed together. I find it funny when he talks about his strong dislike towards his father, only to display the exact same traits he constantly complains of. I don't really mind though- Charlie is good company, but I cannot say more than that.
+
+James comes home from his 3 month work trip, and although I am excited to see him, Charlie is still here. I know James would not be mad about Charlie, but I haven't yet explained to Charlie that I am married. James walks in my room and doesn't even look at Charlie. In fact- he doesn't even look at me. He doesn't need to, to know what I have done while he was away.
+
+When James and I are later in private, he has his MacBook open to a markdown file in VS Code titled "Angela" (the name he refers to me as) and he writes of his frustration towards me and my actions but how quickly it dissolves and how he cannot stop forgiving. He gives me a green letter and tells me it is a breakup letter. Again, he cannot look me in the eyes. He tells me that he was proud of me when I was a prostitute, and was able to figure things out. He reminds me of the time I had to pay for a hospital bill, and how I was able to pay for it. I tell him that I have a retail job now, and this is true. He is still disappointed and doesn't seem to care. He calls me a "sellout".
+
+January 14
+
+10:50- I was outside on a huge field, it is winter so there was a little ice rink from the lake. And so I was on the ice rink skating and listening to "Last Dance" by Donna Summer because Mone Chiba had recently done a routine to the same song, and it quickly became one of my favorite routines. I was never self conscious when I skated myself, which I find weird now because I am often quite neurotic about my performance. But for some reason my mind always returns to ice skating, and here I was on the rink with the confidence of a killer seemingly out of nowhere. I just wanted to listen to music and skate, and not care what anybody thought of me at the time and I remember repeating this mantra in my head.
+
+January 18
+
+13:26- My friends and I were at a cafe, talking about a serial killer in our area. I had seen the suspect on the news, and we actually knew him. He was a quiet and stoic guy, so of course he was a serial killer in the eyes of everyone around him. Apparently he had a thing for figure skaters. My friends warned me to be careful around him.
+
+January 27
+
+22:19- I wasn't really, because tonight I found myself to be in the same bed with him. He was on top of me and holding my arms down gently. He leans closely towards me, our skin is touching and he softly whispers a promise to never murder me, and I wholeheartedly believe him. He asks me if I know how to avoid getting hurt when in the face of a human that acts as a predator. I ask him how. He explains that when humans become predators, they are no different than wild animals. If you lie still, no one will notice you. I ask him if the world is like this.
+
+April 18
+
+Today I was standing on the street outside of my apartment. The sky almost looked purple, and it was starting to rain. I am frustrated because there is this box I have outside of my apartment that I have not moved yet, even though I keep telling myself I need to. I don't remember what was on my mind at the time, but we can safely assume it was something I had made up to be stressed about and there was no reason for me to feel so intense. Especially after reaching down to the box, only to find the items are actually fresh, folded laundry. And then I remember that I recently did laundry, and I feel a bit of relief.
+
+I hate the rain and I want to smoke a cigarette before it becomes impossible to, so I run to the roof of my building. My friend Artem is waiting for me. He is a professional Counter-Strike player from Ukraine. We are smoking a cigarette together and I feel a bit flustered because we recently had slept together (and everybody knew), and we hadn't talked about it yet. Neither of us really wanted to though, and I don't think it necessarily mattered in that moment. I just wanted to smoke a cigarette.
+
+Later that night we go to a movie screening, and a lot of his Counter-Strike pro player friends were there. He is friends with an awper from Poland named… Roland. I particularly like him and try to introduce myself but completely and totally embarrass myself. I say "Cześć" and then quickly correct myself as I am using the informal version of "Hello" so I say "Przepraszam, dzień dobry" and he finds it amusing. I wonder if he found my pronunciation good, but I don't have time to think about it because him and I are both running late to the screening and rushing to our seats.
+
+I make it in time, and am sitting with my friends. One of them drops their vape that they secretly smuggled into the theater, so my friends are frantically turning on their phone flashlights and I am helping them find the vape. I poke my head up only to see everybody in the theater looking at us, whispering, and even filming us on their phones. I am mortified.
+`
+  },
+  {
     id: "same-iq",
     title: "'I Bet They Have the Same IQ Too. LOLZ!'",
     body: `
