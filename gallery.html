@@ -23,6 +23,38 @@
   <script src="gallery.js"></script>
   <script>
     const grid = document.getElementById("gallery-grid");
+    for (const id of (typeof VIDEOS !== "undefined" ? VIDEOS : [])) {
+      const tile = document.createElement("div");
+      tile.className = "video-tile";
+
+      const facade = document.createElement("button");
+      facade.type = "button";
+      facade.className = "video-facade";
+      facade.setAttribute("aria-label", "Play video");
+
+      const thumb = document.createElement("img");
+      thumb.src = "https://img.youtube.com/vi/" + id + "/maxresdefault.jpg";
+      thumb.onerror = () => { thumb.onerror = null; thumb.src = "https://img.youtube.com/vi/" + id + "/hqdefault.jpg"; };
+      thumb.alt = "video thumbnail";
+
+      const play = document.createElement("span");
+      play.className = "video-play";
+
+      facade.appendChild(thumb);
+      facade.appendChild(play);
+      facade.addEventListener("click", () => {
+        const iframe = document.createElement("iframe");
+        iframe.className = "video-frame";
+        iframe.src = "https://www.youtube.com/embed/" + id + "?autoplay=1";
+        iframe.title = "YouTube video";
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowFullscreen = true;
+        tile.replaceChildren(iframe);
+      });
+
+      tile.appendChild(facade);
+      grid.appendChild(tile);
+    }
     for (const filename of GALLERY) {
       const link = document.createElement("a");
       link.href = "images/gallery/" + encodeURIComponent(filename);

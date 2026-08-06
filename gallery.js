@@ -1,3 +1,9 @@
+// YouTube videos featured at the top of the gallery.
+// Add a video by pasting its ID (the part after "v=" or "youtu.be/").
+const VIDEOS = [
+  "hf6IpPZfQWQ",
+];
+
 // All photos shown on the gallery page, in this order.
 // To add a photo: drop it in images/gallery, add its filename here,
 // then run:  py -3 make_thumbs.py  (creates the small fast-loading copy)
