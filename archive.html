@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>posts — sabrina081476</title>
+  <title>archive — sabrina081476</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
@@ -12,11 +12,8 @@
   <header class="page-header">
     <h1 class="site-title small"><a href="/">sabrina081476</a></h1>
     <nav class="page-nav">
-      <a class="side-link" href="/">home</a>
-      <div class="page-title-group">
-        <span class="page-title">posts</span>
-        <a class="archive-link" href="/archive">archive</a>
-      </div>
+      <a class="side-link" href="/posts">posts</a>
+      <span class="page-title">archive</span>
       <a class="side-link" href="/gallery">gallery</a>
     </nav>
   </header>
@@ -26,7 +23,7 @@
   <script src="posts.js"></script>
   <script src="render.js"></script>
   <script>
-    renderPosts(document.getElementById("post-list"), (post) => !post.archived);
+    renderPosts(document.getElementById("post-list"), (post) => post.archived);
   </script>
 </body>
 </html>
