@@ -11,6 +11,37 @@
 
 const POSTS = [
   {
+    id: "confessions-schizophrenic",
+    title: "Confessions of a Schizophrenic",
+    body: `
+I write this in agony and pain and am thinking of suicide. Not a glamorous one though, one that is quiet and quick. I believe a quick suicide is a quiet one. Anything more than a bullet to the head would be far too much work and far too much pain. So I guess one must ask themselves, “do I really want to die? Is this pain truly so unbearable I must rid myself of a gift that is my own being, my own living?”. Of course not.
+
+Recently I have done something quite stupid, and I was aware of how stupid it would be before I did it, yet I chose to anyway. This is my confession - I must let it out! No longer can I betray myself or those around me. Or maybe I just feel like confessing is the right thing to do. Because I have confessed before, only to repeat the same action again. I am not sure why I have done this.
+
+I describe it as a lazy man in a spaceship, who was supposed to bring two engines. He did not,(due to laziness) and he finds himself stuck, his engine is dead and he did not prepare accordingly, and now he is being pulled into a black hole. He put himself here, this is his fault and now he must deal with the consequences. However, there is nothing he can do. He cannot control his spaceship or the black hole, he must accept it. And so he sits in this spaceship and he laughs. And he looks out the window and smiles at the beauty of the stars around him, because he can either worry and weep in agony, or notice the beauty around him. Neither will change his situation, so he chooses to laugh.
+
+So while I am writing this in agony and pain and thinking (fondly now) of suicide, I laugh! I amuse myself. Oh dear, I really messed up this time. My head rests in my hands and I am pulling small strands of hair out and laughing and crying and a delirious mess and I am enjoying it, for this is “Goodness” in its entirety.
+
+I become an opponent to Camus here - Sisyphus was punished by the gods for defying them. I put myself here. It is entirely and unglamorously, my own fault. Most human suffering is like this- self inflicted and slightly embarrassing. Yet I laugh anyways! Sheepishly, I must admit. There is no grandeur in my amusement. But I propose an idea- I take responsibility, I confess to my crimes, I accept that I did this and cannot undo it, but I may still look out the window.
+
+Do not mistake this for naivety or “philosophical suicide” as Camus may call it. The stars are not a consolation prize. I attribute no meaning to them, or the black hole. There is no reframing of nature, I refuse to reject a lie. I simply just notice that the stars are here and noticing costs me and changes nothing.
+
+But this is not nihilistic in a sense either, that nothing has meaning, and to do whatever I want. Suppose the lazy man finds himself on the other side of the black hole, presented with another spaceship, another engine, another way to get home. And he is presented with this exact same offer every time he travels through the black hole. The only way to return home is to fix his mistakes. Say he ignores this offer (as I have). He now must wrestle with an additional layer of guilt.
+
+This is one thing no one will tell you about self-knowledge. Chronic infidelity does not end because the perpetrator is aware of what they are doing. What comes instead is the second layer of guilt I have described. It feels almost impossible to heal. This is the agony I preserve myself in. My greatest pet peeves are laziness, liars, inability to take responsibility, because these are all things I have not been able to dissolve guilt from.
+
+I find myself to fall back into bad habits quite easily, maybe more than the average person. A bad habit is tantalizing to me, fruitful, fun. I am excited by the danger, it beckons to me and seduces me in a way I could not to myself. Many people would probably agree with me, but their bad habits at a lesser scale, less at stake. But their bad habits may be equally as bad as mine, yet have something I have always been jealous of - restraint.
+
+When this restraint comes into play, there is another force declining this beckoning. There is strength in restraint that I do not have yet. Why I do not have this restraint is a question that may be asked, but cannot be answered yet. I simply do not know myself. It would be too cliche and too easy to attribute it to certain life circumstances or traumas.
+
+(Not only this, but there is really no reason for me to attribute meaning to why I lack restraint. I am not sure how far meaning can get me.)
+
+So I have found myself on the other end of the black hole. Taking the spaceship without a second engine, once again, and finding myself to be pulled into another black hole. But I assert myself! I will no longer! I have suffered, I have remembered what it feels like to be pulled into that black hole. The complete and total loss of control, the impending doom, the knowing of the consequences, the furthest distance from home and all the pain that arrives with it.
+
+I will often find myself here again, and when that time does arrive, I will notice the stars as I am now. And I will laugh, I will smile, I will try the second engine again. I will try for as long as I can until I finally get home. I am human, it is natural for me to make mistakes. Perhaps I will never reach home but I will not stop trying, even if I know reaching home will never be a possibility. No home, and I go anyway. I affirm it all! I say YES!
+`
+  },
+  {
     id: "sellout",
     title: "Sellout",
     body: `
