@@ -11,6 +11,21 @@
 
 const POSTS = [
   {
+    id: "sacrifice",
+    title: "Sacrifice",
+    body: `
+I spoke with Pepper today and I expressed my interest in joining a lab this year. I told him about my language acquisition models idea and he gave me a lot of great info. He pretended to be a professor for a bit and asked me why my models would be any better than someone else’s and if each of the models follow some sort of basis instead of independently built. He also told me that most people who do research either cite a bunch of resources and say “some other guy did this, here’s what I added onto it” and if you are egomaniacal enough, you will be able to make it only about what you added onto it. He said this is what my language models would be doing, and he affirmed this as better than the alternative which is spending your entire life arguing with yourself why you are not wrong, and you will write 800 page publications that make no sense to anybody around you. And you will wonder why you have no friends and no family. All for what- to defend your point? And then 20 years later someone looks at it and says “actually, this is wrong”. And that's all you get out of it.
+
+He also visualized very well what labs look like. Modern lights if I’m lucky, but usually I will be stuck with the jail-esque LED lights and only half of them work, and it’s not like one light is on another is off, it’s like on on on off and then next row is off off on off; and there will be five light switches and nobody knows which one is for the actual light, and a wire hanging from the ceiling plugged directly into the wall. And there will be 5cm of mousepad space and keyboards that take four presses of the letter “h” key to actually output the letter “h” on the monitor. And next to those monitors will be stacks of folders from 1999 that haven’t been moved and if you do move them the wifi will go out.
+
+It was a lovely picture to imagine and I found it more charming than horrifying. I knew it wouldn’t be like the movies, and I maybe romanticized this imagery a bit in my head. I trusted Pepper. He always gave me lots of good advice. He helped me through a very unfortunate breakup once. But that's besides the point.
+
+I left Pepper's apartment later that day and wrote on my train ride home. I wanted to keep Pepper's words somewhere. I appreciated them and was envious I couldn't paint a picture as vivid as he did. Maybe that's where I found the beauty. Oftentimes if you are able to visualize something well enough, people will romanticize it. Movies are beautiful because they do exactly this.
+
+My phone broke today. I took off my case because Revenue never had a case on his phone. He said it was because that's how the iPhone was intended to be. I liked that, and I'm a Steve Jobs fan. Jobs advocated for simplicity, so I feel I must adhere to that. He's kind of my idol in life, most likely because he is adopted and I am too. He claims he knew his biological parents loved him, so he never felt bad about it. I feel the same way,  I know they loved me, that's why they put me up for adoption. A noble sacrifice.
+`
+  },
+  {
     id: "worst-feeling",
     title: "The Worst Feeling in the World",
     body: `
