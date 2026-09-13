@@ -1,24 +1,32 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   background-color: #ffffff;
+  color: #323436;
 }
+
+/* --- home page: text on the left, photo in the upper right --- */
 
 .container {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 24px;
-  padding: 24px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 96px;
+  padding: 48px;
   box-sizing: border-box;
+  text-align: left;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .site-title {
   color: #e8140c;
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: bold;
   margin: 0;
 }
@@ -27,39 +35,48 @@ body {
   max-width: 320px;
   width: 100%;
   height: auto;
+  margin: 48px 64px 0 0;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+
+  .hero {
+    margin: 0;
+  }
 }
 
 .links {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 8px;
 }
 
 .links a {
-  color: #000000;
+  color: #0814bd;
   text-decoration: none;
-  font-size: 1.1rem;
-}
-
-.links a:hover {
-  text-decoration: underline;
+  font-size: 0.95rem;
+  padding: 1px 4px;
 }
 
 .socials {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 4px;
   margin-top: -8px;
 }
 
 .socials a {
-  color: #000000;
+  color: #0814bd;
   text-decoration: none;
-  font-size: 0.8rem;
-}
-
-.socials a:hover {
-  text-decoration: underline;
+  font-size: 0.7rem;
+  padding: 1px 4px;
 }
 
 /* --- inner pages (posts, gallery, single post) --- */
@@ -69,6 +86,34 @@ body {
   padding-top: 28px;
 }
 
+/* header pinned to the upper left instead of centered */
+.page-header.left {
+  text-align: left;
+  padding: 48px 48px 0;
+}
+
+.page-header.left .site-title.small {
+  font-size: 2.1rem;
+}
+.page-header.left .page-nav {
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-top: 12px;
+}
+
+.page-header.left .side-link {
+  margin-top: 0;
+}
+
+.page-header.left .page-title {
+  font-size: 1.25rem;
+  color: #000000;
+}
+
+.archive-footer {
+  margin: 40px 0 0;
+}
+
 .site-title.small {
   font-size: 1.5rem;
 }
@@ -76,6 +121,7 @@ body {
 .site-title.small a {
   color: #e8140c;
   text-decoration: none;
+  padding: 1px 4px;
 }
 
 .page-nav {
@@ -87,14 +133,11 @@ body {
 }
 
 .page-nav .side-link {
-  color: #000000;
+  color: #323436;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   margin-top: 10px;
-}
-
-.page-nav .side-link:hover {
-  text-decoration: underline;
+  padding: 1px 4px;
 }
 
 .page-title-group {
@@ -108,22 +151,18 @@ body {
   font-size: 3rem;
   font-weight: bold;
   line-height: 1;
-  color: #000000;
+  color: #0814bd;
   text-decoration: none;
 }
 
 .archive-link {
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   font-weight: bold;
-  color: #000000;
+  color: #323436;
   text-decoration: none;
   border: 1px solid #999999;
   border-radius: 0;
   padding: 1px 6px;
-}
-
-.archive-link:hover {
-  background: #f0f0f0;
 }
 
 a.page-title:hover {
@@ -132,20 +171,18 @@ a.page-title:hover {
 
 .post-list,
 .post-page {
-  max-width: 620px;
-  margin: 64px auto 0;
-  padding: 0 24px 64px;
+  margin: 64px 0 0;
+  padding: 0 48px 64px;
 }
 
 .post-preview {
-  margin-bottom: 56px;
+  margin-bottom: 8px;
 }
 
 .post-heading {
   display: flex;
   align-items: baseline;
   gap: 12px;
-  margin-bottom: 12px;
 }
 
 .post-heading .post-title {
@@ -154,8 +191,8 @@ a.page-title:hover {
 
 .translate-btn {
   font-family: inherit;
-  font-size: 0.7rem;
-  color: #000000;
+  font-size: 0.6rem;
+  color: #323436;
   background: none;
   border: 1px solid #999999;
   border-radius: 0;
@@ -166,11 +203,12 @@ a.page-title:hover {
 }
 
 .translate-btn:hover {
-  background: #f0f0f0;
+  background: #ffffff;
 }
 
 .post-title {
-  font-size: 1.4rem;
+  color: #0814bd;
+  font-size: 0.95rem;
   font-weight: bold;
   margin: 0 0 12px;
   text-decoration: underline;
@@ -178,17 +216,102 @@ a.page-title:hover {
 }
 
 .post-title a {
-  color: #000000;
+  color: #0814bd;
   text-decoration: underline;
   text-underline-offset: 6px;
+  padding: 1px 4px;
+}
+
+/* the open post's title stays highlighted */
+.post-title a.open {
+  background: #0814bd;
+  color: #ffffff;
+}
+
+/* --- links: highlight that blinks while hovered --- */
+
+.page-nav .side-link,
+.site-title.small a,
+.archive-link {
+  --blink-bg: #000000;
+  --blink-fg: #ffffff;
+}
+
+.links a,
+.socials a {
+  --blink-bg: #0814bd;
+  --blink-fg: #ffffff;
+}
+
+.links a,
+.socials a,
+.post-title a {
+  --base-fg: #0814bd;
+}
+
+.page-nav .side-link,
+.archive-link {
+  --base-fg: #323436;
+}
+
+.site-title.small a {
+  --base-fg: #e8140c;
+}
+
+.post-title a {
+  --blink-bg: #0814bd;
+  --blink-fg: #ffffff;
+}
+
+.links a:hover,
+.socials a:hover,
+.page-nav .side-link:hover,
+.site-title.small a:hover,
+.archive-link:hover,
+.post-title a:hover {
+  background-color: var(--blink-bg);
+  color: var(--blink-fg);
+  animation: link-blink 0.8s step-end infinite;
+}
+
+@keyframes link-blink {
+  0% {
+    background-color: var(--blink-bg);
+    color: var(--blink-fg);
+  }
+  50% {
+    background-color: transparent;
+    color: var(--base-fg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .links a:hover,
+  .socials a:hover,
+  .page-nav .side-link:hover,
+  .site-title.small a:hover,
+  .archive-link:hover,
+  .post-title a:hover {
+    animation: none;
+  }
 }
 
 .post-body {
   padding-left: 16px;
   margin-top: 32px;
-  max-width: 34em;
-  font-size: 0.9rem;
+  margin-bottom: 34px;
+  max-width: 70%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12.5px;
   line-height: 1.5;
+}
+
+.post-body p {
+  margin: 0 0 0.5em;
+}
+
+.post-body p:last-child {
+  margin-bottom: 0;
 }
 
 /* --- gallery --- */
@@ -197,8 +320,8 @@ a.page-title:hover {
   columns: 3;
   column-gap: 12px;
   max-width: 1000px;
-  margin: 48px auto 0;
-  padding: 0 24px 64px;
+  margin: 64px 0 0;
+  padding: 0 48px 64px;
 }
 
 .gallery-grid a {
@@ -258,7 +381,7 @@ a.page-title:hover {
 }
 
 .video-facade:hover .video-play {
-  background: #e8140c;
+  background: #0053a6;
 }
 
 .video-frame {

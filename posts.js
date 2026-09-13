@@ -77,24 +77,6 @@ When James and I are later in private, he has his MacBook open to a markdown fil
 `
   },
   {
-    id: "after-sellout",
-    title: "After Sellout",
-    archived: true,
-    body: `
-January 14
-
-10:50- I was outside on a huge field, it is winter so there was a little ice rink from the lake. And so I was on the ice rink skating and listening to "Last Dance" by Donna Summer because Mone Chiba had recently done a routine to the same song, and it quickly became one of my favorite routines. I was never self conscious when I skated myself, which I find weird now because I am often quite neurotic about my performance. But for some reason my mind always returns to ice skating, and here I was on the rink with the confidence of a killer seemingly out of nowhere. I just wanted to listen to music and skate, and not care what anybody thought of me at the time and I remember repeating this mantra in my head.
-
-January 18
-
-13:26- My friends and I were at a cafe, talking about a serial killer in our area. I had seen the suspect on the news, and we actually knew him. He was a quiet and stoic guy, so of course he was a serial killer in the eyes of everyone around him. Apparently he had a thing for figure skaters. My friends warned me to be careful around him.
-
-January 27
-
-22:19- I wasn't really, because tonight I found myself to be in the same bed with him. He was on top of me and holding my arms down gently. He leans closely towards me, our skin is touching and he softly whispers a promise to never murder me, and I wholeheartedly believe him. He asks me if I know how to avoid getting hurt when in the face of a human that acts as a predator. I ask him how. He explains that when humans become predators, they are no different than wild animals. If you lie still, no one will notice you. I ask him if the world is like this.
-`
-  },
-  {
     id: "same-iq",
     title: "'I Bet They Have the Same IQ Too. LOLZ!'",
     archived: true,

@@ -9,19 +9,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header left">
     <h1 class="site-title small"><a href="/">sabrina081476</a></h1>
     <nav class="page-nav">
       <a class="side-link" href="/">home</a>
-      <div class="page-title-group">
-        <span class="page-title">posts</span>
-        <a class="archive-link" href="/archive">archive</a>
-      </div>
+      <span class="page-title">posts</span>
       <a class="side-link" href="/gallery">gallery</a>
     </nav>
   </header>
 
-  <main class="post-list" id="post-list"></main>
+  <main class="post-list">
+    <div id="post-list"></div>
+    <p class="archive-footer"><a class="archive-link" href="/archive">archive</a></p>
+  </main>
 
   <script src="posts.js"></script>
   <script src="render.js"></script>

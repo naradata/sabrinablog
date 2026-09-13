@@ -37,6 +37,7 @@ function renderPosts(list, filter) {
     toggle.addEventListener("click", (event) => {
       event.preventDefault();
       body.hidden = !body.hidden;
+      toggle.classList.toggle("open", !body.hidden);
     });
 
     if (post.translation) {
@@ -50,6 +51,7 @@ function renderPosts(list, filter) {
         render(translated ? post.translation : post.body);
         translateButton.textContent = translated ? "English" : "Перевести";
         body.hidden = false;
+        toggle.classList.add("open");
       });
       headingRow.appendChild(translateButton);
     }
