@@ -11,6 +11,28 @@
 
 const POSTS = [
   {
+    id: "worst-feeling",
+    title: "The Worst Feeling in the World",
+    body: `
+“I know you’re really busy and that my thoughts are probably not that impressive or original but I was wondering if you’d be willing to um, read some things I’ve um. Written.”
+
+“Well,”
+Robert glances at the ground and has a puzzled look on his face, as if he’s genuinely contemplating it. He seems to be careful about his next words.
+
+“I don’t think I will have the time for something like that. It doesn’t mean I don’t want to read your writings- I’m sure they’re great. But I just don’t think it would be possible. I mean if you want…”
+Robert shrugs his shoulders and makes that sort of hissing sound (with a slight grimace) a person does when they feel bad about saying “no” to someone.
+
+“…I could read some right now. Do you have them on you?”
+You hesitate. You have two issues. One- you don’t have them on you and two, even if you did you probably wouldn’t show them. You blurt out,
+
+“I think I want to quit school but not because I’m bored. Because I didn’t like school when I was a kid because it was boring to me and almost everyone convinced me I was stupid because of it. But now I want to quit school because I’m scared they were right. But, um, I don’t know what “smartness” looks like. I don’t know how high the ceiling gets but to me it feels infinite. And so, I think I will always feel dumb. I don’t know if that makes sense. I’m not very sure of myself. I’m sorry. God… I’m so sorry.”
+
+The room goes silent. Robert has a big grin on his face. He shakes his head then laughs, very genuinely, in disbelief.
+
+“What was your name again?”
+`
+  },
+  {
     id: "confessions-schizophrenic",
     title: "Confessions of a Schizophrenic",
     body: `

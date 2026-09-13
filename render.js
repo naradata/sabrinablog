@@ -24,7 +24,11 @@ function renderPosts(list, filter) {
       body.textContent = "";
       for (const paragraph of text.trim().split(/\n\s*\n/)) {
         const p = document.createElement("p");
-        p.textContent = paragraph;
+        // A single line break inside a paragraph stays a line break
+        paragraph.split("\n").forEach((line, index) => {
+          if (index > 0) p.appendChild(document.createElement("br"));
+          p.appendChild(document.createTextNode(line));
+        });
         body.appendChild(p);
       }
     };
