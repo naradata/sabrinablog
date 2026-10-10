@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>photos — sabrina081476</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-head">
+      <a href="/"><img class="site-icon" src="images/sabrina.png" alt=""></a>
+      <h1 class="site-name"><a href="/">sabrina081476</a></h1>
+    </header>
+
+    <img class="banner" src="images/banner.jpg" alt="">
+
+    <nav class="crumbs"><a href="/">Home</a><span class="sep">&raquo;</span><span class="here">Photos</span></nav>
+
+    <div class="cols">
+      <aside class="side side-b">
+        <nav class="box">
+          <h2>navigation</h2>
+          <div class="nav">
+            <a href="/">home page</a>
+            <a href="/about">about me</a>
+            <a href="/posts">posts</a>
+            <a href="/archive">archive</a>
+            <a href="/art">art</a>
+            <a class="here" href="/photos">photos</a>
+          </div>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <section class="box">
+          <h2>photos</h2>
+          <div class="box-body">
+            <div class="gallery-grid" id="gallery-grid"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-foot">
+      sabrina081476 &middot; <a href="https://x.com/opmpony" target="_blank" rel="noopener noreferrer">twitter</a>
+      &middot; <a href="https://www.instagram.com/fortnitelegend1476/" target="_blank" rel="noopener noreferrer">instagram</a>
+      &middot; <a href="https://www.hltv.org/profile/1964715/fragglehoof" target="_blank" rel="noopener noreferrer">hltv</a>
+    </footer>
+  </div>
+
+  <script src="gallery.js"></script>
+  <script>
+    const grid = document.getElementById("gallery-grid");
+
+    for (const id of (typeof VIDEOS !== "undefined" ? VIDEOS : [])) {
+      const tile = document.createElement("div");
+      tile.className = "video-tile";
+
+      const facade = document.createElement("button");
+      facade.type = "button";
+      facade.className = "video-facade";
+      facade.setAttribute("aria-label", "Play video");
+
+      const thumb = document.createElement("img");
+      thumb.src = "https://img.youtube.com/vi/" + id + "/maxresdefault.jpg";
+      thumb.onerror = () => { thumb.onerror = null; thumb.src = "https://img.youtube.com/vi/" + id + "/hqdefault.jpg"; };
+      thumb.alt = "video thumbnail";
+
+      const play = document.createElement("span");
+      play.className = "video-play";
+
+      facade.appendChild(thumb);
+      facade.appendChild(play);
+      facade.addEventListener("click", () => {
+        const iframe = document.createElement("iframe");
+        iframe.className = "video-frame";
+        iframe.src = "https://www.youtube.com/embed/" + id + "?autoplay=1";
+        iframe.title = "YouTube video";
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowFullscreen = true;
+        tile.replaceChildren(iframe);
+      });
+
+      tile.appendChild(facade);
+      grid.appendChild(tile);
+    }
+
+    for (const filename of GALLERY) {
+      const link = document.createElement("a");
+      link.href = "images/gallery/" + encodeURIComponent(filename);
+      const img = document.createElement("img");
+      img.src = "images/gallery-thumbs/" + encodeURIComponent(filename);
+      img.alt = filename.replace(/\.[^.]+$/, "");
+      link.appendChild(img);
+      grid.appendChild(link);
+    }
+  </script>
+</body>
+</html>

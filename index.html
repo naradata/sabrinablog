@@ -9,20 +9,249 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <div class="home-text">
-      <h1 class="site-title">sabrina081476</h1>
-      <nav class="links">
-        <a href="/posts">posts</a>
-        <a href="/gallery">gallery</a>
-      </nav>
-      <nav class="socials">
-        <a href="https://x.com/opmpony" target="_blank" rel="noopener noreferrer">twitter</a>
-        <a href="https://www.instagram.com/fortnitelegend1476/" target="_blank" rel="noopener noreferrer">instagram</a>
-        <a href="https://www.hltv.org/profile/1964715/fragglehoof" target="_blank" rel="noopener noreferrer">hltv</a>
-      </nav>
+  <div class="wrap">
+    <header class="site-head">
+      <a href="/"><img class="site-icon" src="images/sabrina.png" alt=""></a>
+      <h1 class="site-name"><a href="/">sabrina081476</a></h1>
+    </header>
+
+    <img class="banner" src="images/banner.jpg" alt="">
+
+    <nav class="crumbs"><span class="here">Home</span></nav>
+
+    <div class="cols">
+      <aside class="side side-b">
+        <nav class="box">
+          <h2>navigation</h2>
+          <div class="nav">
+            <a class="here" href="/">home page</a>
+            <a href="/about">about me</a>
+            <a href="/posts">posts</a>
+            <a href="/archive">archive</a>
+            <a href="/art">art</a>
+            <a href="/photos">photos</a>
+          </div>
+        </nav>
+
+        <section class="box">
+          <h2>blinkies</h2>
+          <div class="box-body">
+            <div class="blinkies" id="blinkies"></div>
+            <p class="note" id="blinkies-empty">Nothing pinned up yet.</p>
+          </div>
+        </section>
+      </aside>
+
+      <main class="main">
+        <section class="box">
+          <h2>recent posts</h2>
+          <div class="box-body">
+            <div id="recent-posts"></div>
+            <p class="note" id="recent-empty">Nothing new yet.</p>
+          </div>
+        </section>
+
+        <div class="row">
+        <section class="box">
+          <h2>guestbook</h2>
+          <div class="box-body">
+            <p class="note" id="gb-empty">No entries yet — be the first to sign.</p>
+            <div id="gb-entries"></div>
+            <form class="gb-form" id="gb-form">
+              <p><input id="gb-name" type="text" placeholder="your name" maxlength="40"></p>
+              <p><input id="gb-message" type="text" placeholder="say something" maxlength="200" size="40"></p>
+              <p><button type="submit">sign the guestbook</button></p>
+              <p class="note">Entries are saved in your own browser only for now.</p>
+            </form>
+          </div>
+        </section>
+
+        <section class="box">
+          <h2>currently</h2>
+          <div class="box-body">
+            <dl class="currently">
+              <dt>listening</dt>
+              <dd>Donna Summer — Last Dance</dd>
+              <dt>reading</dt>
+              <dd>—</dd>
+              <dt>playing</dt>
+              <dd>Counter-Strike</dd>
+              <dt>feeling</dt>
+              <dd>naive, on purpose</dd>
+            </dl>
+          </div>
+        </section>
+        </div>
+      </main>
+
+      <aside class="side side-a">
+        <section class="box">
+          <h2>updates</h2>
+          <div class="box-body">
+            <ul class="updates">
+              <li><span class="when">01 oct 2026</span>New site layout up.</li>
+              <li><span class="when">13 sep 2026</span>Added "Sacrifice".</li>
+              <li><span class="when">aug 2026</span>Photos moved to their own page.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="box">
+          <h2>search</h2>
+          <div class="box-body">
+            <form class="search-form" id="search-form">
+              <input id="search-input" type="search" placeholder="search writing">
+              <button type="submit">go</button>
+            </form>
+            <p class="note" id="search-hint">tags: <a href="#" class="tag-link">archive</a>, <a href="#" class="tag-link">photos</a></p>
+            <div id="search-results"></div>
+          </div>
+        </section>
+      </aside>
     </div>
-    <img class="hero" src="images/doityourself.jpg" alt="Sign reading: Do it yourself, do not doubt, yes you can, yes you can">
-  </main>
+
+    <footer class="site-foot">
+      sabrina081476 &middot; <a href="https://x.com/opmpony" target="_blank" rel="noopener noreferrer">twitter</a>
+      &middot; <a href="https://www.instagram.com/fortnitelegend1476/" target="_blank" rel="noopener noreferrer">instagram</a>
+      &middot; <a href="https://www.hltv.org/profile/1964715/fragglehoof" target="_blank" rel="noopener noreferrer">hltv</a>
+    </footer>
+  </div>
+
+  <script src="posts.js"></script>
+  <script src="gallery.js"></script>
+  <script src="blinkies.js"></script>
+  <script src="render.js"></script>
+  <script>
+    // new writing shows up here; archived pieces stay on the archive page
+    const recent = document.getElementById("recent-posts");
+    renderPosts(recent, (post) => !post.archived, 3);
+    document.getElementById("recent-empty").hidden = recent.children.length > 0;
+
+    /* ---- blinkies, stickers, gifs ---- */
+
+    const blinkieBox = document.getElementById("blinkies");
+    for (const item of BLINKIES) {
+      const img = document.createElement("img");
+      img.src = "images/blinkies/" + encodeURIComponent(item.file);
+      img.alt = item.alt || "";
+      if (item.link) {
+        const a = document.createElement("a");
+        a.href = item.link;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        a.appendChild(img);
+        blinkieBox.appendChild(a);
+      } else {
+        blinkieBox.appendChild(img);
+      }
+    }
+    document.getElementById("blinkies-empty").hidden = BLINKIES.length > 0;
+
+    /* ---- search: plain words or tags (archive, photos) ---- */
+
+    const searchResults = document.getElementById("search-results");
+
+    const postMatches = (post, term) => {
+      const tags = post.tags || [];
+      return (
+        tags.some((tag) => tag.toLowerCase() === term) ||
+        post.title.toLowerCase().includes(term) ||
+        post.body.toLowerCase().includes(term)
+      );
+    };
+
+    const photosMatching = (term) => {
+      if (GALLERY_TAGS.some((tag) => tag === term)) return GALLERY.slice();
+      return GALLERY.filter((name) => name.toLowerCase().includes(term));
+    };
+
+    const runSearch = (raw) => {
+      const term = raw.trim().toLowerCase().replace(/^#/, "");
+      searchResults.textContent = "";
+      if (!term) return;
+
+      renderPosts(searchResults, (post) => postMatches(post, term));
+
+      const photos = photosMatching(term);
+      if (photos.length) {
+        const link = document.createElement("a");
+        link.className = "result-count";
+        link.href = "/photos";
+        link.textContent = photos.length + " photo" + (photos.length === 1 ? "" : "s") + " »";
+        searchResults.appendChild(link);
+      }
+
+      if (!searchResults.children.length) {
+        const p = document.createElement("p");
+        p.className = "note";
+        p.textContent = "Nothing found.";
+        searchResults.appendChild(p);
+      }
+    };
+
+    document.getElementById("search-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      runSearch(document.getElementById("search-input").value);
+    });
+
+    for (const link of document.querySelectorAll(".tag-link")) {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        document.getElementById("search-input").value = link.textContent;
+        runSearch(link.textContent);
+      });
+    }
+
+    /* ---- guestbook — kept in this browser until a real one is wired up ---- */
+
+    const gbEntries = document.getElementById("gb-entries");
+    const gbEmpty = document.getElementById("gb-empty");
+
+    const readGuestbook = () => {
+      try {
+        return JSON.parse(localStorage.getItem("guestbook") || "[]");
+      } catch (err) {
+        return [];
+      }
+    };
+
+    const drawGuestbook = () => {
+      const entries = readGuestbook();
+      gbEntries.textContent = "";
+      gbEmpty.hidden = entries.length > 0;
+      for (const entry of entries) {
+        const div = document.createElement("div");
+        div.className = "gb-entry";
+        const who = document.createElement("span");
+        who.className = "who";
+        who.textContent = entry.name + " ";
+        const when = document.createElement("span");
+        when.className = "note";
+        when.textContent = entry.when;
+        const msg = document.createElement("div");
+        msg.textContent = entry.message;
+        div.append(who, when, msg);
+        gbEntries.appendChild(div);
+      }
+    };
+
+    document.getElementById("gb-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const name = document.getElementById("gb-name").value.trim() || "anonymous";
+      const message = document.getElementById("gb-message").value.trim();
+      if (!message) return;
+      const entries = readGuestbook();
+      entries.unshift({ name, message, when: new Date().toLocaleDateString() });
+      try {
+        localStorage.setItem("guestbook", JSON.stringify(entries.slice(0, 50)));
+      } catch (err) {
+        /* private browsing — entry just won't stick */
+      }
+      document.getElementById("gb-message").value = "";
+      drawGuestbook();
+    });
+
+    drawGuestbook();
+  </script>
 </body>
 </html>

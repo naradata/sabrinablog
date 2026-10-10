@@ -1,3 +1,6 @@
+// Tags that apply to everything on the photos page.
+const GALLERY_TAGS = ["photos"];
+
 // YouTube videos featured at the top of the gallery.
 // Add a video by pasting its ID (the part after "v=" or "youtu.be/").
 const VIDEOS = [

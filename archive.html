@@ -9,21 +9,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="page-header left">
-    <h1 class="site-title small"><a href="/">sabrina081476</a></h1>
-    <nav class="page-nav">
-      <a class="side-link" href="/posts">posts</a>
-      <span class="page-title">archive</span>
-      <a class="side-link" href="/gallery">gallery</a>
-    </nav>
-  </header>
+  <div class="wrap">
+    <header class="site-head">
+      <a href="/"><img class="site-icon" src="images/sabrina.png" alt=""></a>
+      <h1 class="site-name"><a href="/">sabrina081476</a></h1>
+    </header>
 
-  <main class="post-list" id="post-list"></main>
+    <img class="banner" src="images/banner.jpg" alt="">
+
+    <nav class="crumbs"><a href="/">Home</a><span class="sep">&raquo;</span><span class="here">Archive</span></nav>
+
+    <div class="cols">
+      <aside class="side side-b">
+        <nav class="box">
+          <h2>navigation</h2>
+          <div class="nav">
+            <a href="/">home page</a>
+            <a href="/about">about me</a>
+            <a href="/posts">posts</a>
+            <a class="here" href="/archive">archive</a>
+            <a href="/art">art</a>
+            <a href="/photos">photos</a>
+          </div>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <section class="box">
+          <h2>archive</h2>
+          <div class="box-body">
+            <p class="note">Everything from the old site. Click a title to read it.</p>
+            <div id="post-list"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-foot">
+      sabrina081476 &middot; <a href="https://x.com/opmpony" target="_blank" rel="noopener noreferrer">twitter</a>
+      &middot; <a href="https://www.instagram.com/fortnitelegend1476/" target="_blank" rel="noopener noreferrer">instagram</a>
+      &middot; <a href="https://www.hltv.org/profile/1964715/fragglehoof" target="_blank" rel="noopener noreferrer">hltv</a>
+    </footer>
+  </div>
 
   <script src="posts.js"></script>
   <script src="render.js"></script>
   <script>
-    renderPosts(document.getElementById("post-list"), (post) => post.archived);
+    renderPosts(document.getElementById("post-list"), (post) => post.archived, null, true);
   </script>
 </body>
 </html>

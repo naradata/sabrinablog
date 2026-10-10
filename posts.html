@@ -9,24 +9,57 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="page-header left">
-    <h1 class="site-title small"><a href="/">sabrina081476</a></h1>
-    <nav class="page-nav">
-      <a class="side-link" href="/">home</a>
-      <span class="page-title">posts</span>
-      <a class="side-link" href="/gallery">gallery</a>
-    </nav>
-  </header>
+  <div class="wrap">
+    <header class="site-head">
+      <a href="/"><img class="site-icon" src="images/sabrina.png" alt=""></a>
+      <h1 class="site-name"><a href="/">sabrina081476</a></h1>
+    </header>
 
-  <main class="post-list">
-    <div id="post-list"></div>
-    <p class="archive-footer"><a class="archive-link" href="/archive">archive</a></p>
-  </main>
+    <img class="banner" src="images/banner.jpg" alt="">
+
+    <nav class="crumbs"><a href="/">Home</a><span class="sep">&raquo;</span><span class="here">Posts</span></nav>
+
+    <div class="cols">
+      <aside class="side side-b">
+        <nav class="box">
+          <h2>navigation</h2>
+          <div class="nav">
+            <a href="/">home page</a>
+            <a href="/about">about me</a>
+            <a class="here" href="/posts">posts</a>
+            <a href="/archive">archive</a>
+            <a href="/art">art</a>
+            <a href="/photos">photos</a>
+          </div>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <section class="box">
+          <h2>posts</h2>
+          <div class="box-body" id="post-list">
+            <p class="note">Nothing here yet. New writing will go on this page — the older pieces live in the <a href="/archive">archive</a>.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-foot">
+      sabrina081476 &middot; <a href="https://x.com/opmpony" target="_blank" rel="noopener noreferrer">twitter</a>
+      &middot; <a href="https://www.instagram.com/fortnitelegend1476/" target="_blank" rel="noopener noreferrer">instagram</a>
+      &middot; <a href="https://www.hltv.org/profile/1964715/fragglehoof" target="_blank" rel="noopener noreferrer">hltv</a>
+    </footer>
+  </div>
 
   <script src="posts.js"></script>
   <script src="render.js"></script>
   <script>
-    renderPosts(document.getElementById("post-list"), (post) => !post.archived);
+    // only posts NOT marked archived show up here
+    const list = document.getElementById("post-list");
+    if (POSTS.some((post) => !post.archived)) {
+      list.textContent = "";
+      renderPosts(list, (post) => !post.archived, null, true);
+    }
   </script>
 </body>
 </html>

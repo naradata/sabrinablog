@@ -13,6 +13,8 @@ const POSTS = [
   {
     id: "sacrifice",
     title: "Sacrifice",
+    archived: true,
+    tags: ["archive"],
     body: `
 I spoke with Pepper today and I expressed my interest in joining a lab this year. I told him about my language acquisition models idea and he gave me a lot of great info. He pretended to be a professor for a bit and asked me why my models would be any better than someone else’s and if each of the models follow some sort of basis instead of independently built. He also told me that most people who do research either cite a bunch of resources and say “some other guy did this, here’s what I added onto it” and if you are egomaniacal enough, you will be able to make it only about what you added onto it. He said this is what my language models would be doing, and he affirmed this as better than the alternative which is spending your entire life arguing with yourself why you are not wrong, and you will write 800 page publications that make no sense to anybody around you. And you will wonder why you have no friends and no family. All for what- to defend your point? And then 20 years later someone looks at it and says “actually, this is wrong”. And that's all you get out of it.
 
@@ -28,6 +30,8 @@ My phone broke today. I took off my case because Revenue never had a case on his
   {
     id: "worst-feeling",
     title: "The Worst Feeling in the World",
+    archived: true,
+    tags: ["archive"],
     body: `
 “I know you’re really busy and that my thoughts are probably not that impressive or original but I was wondering if you’d be willing to um, read some things I’ve um. Written.”
 
@@ -50,6 +54,8 @@ The room goes silent. Robert has a big grin on his face. He shakes his head then
   {
     id: "confessions-schizophrenic",
     title: "Confessions of a Schizophrenic",
+    archived: true,
+    tags: ["archive"],
     body: `
 I write this in agony and pain and am thinking of suicide. Not a glamorous one though, one that is quiet and quick. I believe a quick suicide is a quiet one. Anything more than a bullet to the head would be far too much work and far too much pain. So I guess one must ask themselves, “do I really want to die? Is this pain truly so unbearable I must rid myself of a gift that is my own being, my own living?”. Of course not.
 
@@ -81,6 +87,8 @@ I will often find myself here again, and when that time does arrive, I will noti
   {
     id: "sellout",
     title: "Sellout",
+    archived: true,
+    tags: ["archive"],
     body: `
 James has a beautiful home that I have moved into ever since we got married. He has a gold wedding band, but I cannot remember what mine looks like. I met James when I was 22, him 39. We met in a hotel room, he was a bit shorter than I expected but much more handsome than his pictures. He gave me $2000 in cash and I made sure to make it worth his time. We talked a lot though, he seemed to see me as a real person more than a prostitute, and I appreciated that, although we both knew what this was. However, as time went on the hours added up and it just seemed to make the most sense to get married. I would live in his house, and no matter what I would always have money. Money to do things. Money to make myself feel important in any way I wanted, because money can truly buy anything. Which meant I wouldn't need him for anything emotional- in fact, he married me under the assumption that neither of us would be faithful to each other and that was ok.
 
@@ -95,6 +103,7 @@ When James and I are later in private, he has his MacBook open to a markdown fil
     id: "same-iq",
     title: "'I Bet They Have the Same IQ Too. LOLZ!'",
     archived: true,
+    tags: ["archive"],
     body: `
 This conversation is retarded because you treat intelligence as something of high value or importance but in the real world intelligence doesn't matter to anybody or anything. An employer doesn't ask for your IQ on a resume and if they do, they will hardly be impressed by it if another candidate has previous experience that you do not have. A smart person sits in their room all day and ruminates over every potential problem that could come about in their life so they can have the solution for when it inevitably (and they believe it is inevitable out of delusion) comes. A smart person is neurotic, and gets so trapped within their neuroticism that they are allowed nothing free in their life. The person who goes to law school for 10+ years and is millions of dollars in debt spends the first few years of his career filing paperwork and being treated as "the coffee-boy". The person who doesn't know the difference between "your" and "you're" can socialize well enough that they are millionaires before the age of 35 and are on the street wearing a blue button up shirt, coffee in hand, walking into Goldman Sachs. The lawyer and the stock broker are equally as idiotic as they are intelligent and the real world doesn't care.
 `
@@ -102,6 +111,8 @@ This conversation is retarded because you treat intelligence as something of hig
   {
     id: "indie-journalists",
     title: "Indie Journalists Against Big Interviewees",
+    archived: true,
+    tags: ["archive"],
     body: `
 
 
@@ -158,6 +169,8 @@ This conversation is retarded because you treat intelligence as something of hig
   {
     id: "post-two",
     title: "Goodness",
+    archived: true,
+    tags: ["archive"],
     body: `
 A long time ago I had this belief that I would never be good at anything, because I could never love anything enough to be good at it. I thought I had found it with counterstrike because of how rewarding the game was, but I always felt overwhelmed by the fact that I was probably too old to try to play professionally or even be good at it. Not to diminish anybody who is good at Counterstrike, in fact, I respect and admire those who are good at Counterstrike. It's not just a video game to me and in a way I wish I discovered this years ago, when I truly could have sat in my room for 8 hrs at a time grinding Faceit games back to back to back without having to face real life, serious, adult consequences. And the more adultlike I become the more and more afraid I am that I will never be good at anything.
 
@@ -195,6 +208,7 @@ Aristotle had this idea of energeia/kinesis that applies here. Kinesis is a moti
     id: "godsend",
     title: "Godsend",
     archived: true,
+    tags: ["archive"],
     body: `
 I began playing the game at 6 years old, when I had finally learned how to climb atop the counter and reach for the cookie jar that my mother made so difficult to reach, and she would scold me harshly amidst my thievery, hands in the jar, eyes wide open like a deer in headlights, crumbs piling in my lap. I was messy and lazy at first, as that’s usually how it is when you start something new. My mother, however, was practically a veteran at this game. So serious, pragmatic and intentional. She owned a private ketamine therapy practice, which was quite taboo at the time until she cured a man who loved alcohol so much he was willing to sacrifice everything for it. She corrected his ways and he called her a “godsend”.
 `

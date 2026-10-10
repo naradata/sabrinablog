@@ -1,8 +1,14 @@
-// Shared post-rendering used by posts.html and archive.html.
-// Pass a filter to decide which posts appear on each page.
-function renderPosts(list, filter) {
+// Shared post-rendering used by the home, posts and archive pages.
+// filter:   optional test deciding which posts appear (null = all)
+// limit:    optional maximum number of posts to show
+// showTags: when true, tags appear to the left of the title
+function renderPosts(list, filter, limit, showTags) {
+  let shown = 0;
   for (const post of POSTS) {
     if (filter && !filter(post)) continue;
+    if (limit && shown >= limit) break;
+    shown++;
+
     const article = document.createElement("article");
     article.className = "post-preview";
 
@@ -14,6 +20,14 @@ function renderPosts(list, filter) {
     toggle.href = "#";
     toggle.textContent = post.title;
     heading.appendChild(toggle);
+
+    if (showTags && post.tags && post.tags.length) {
+      const tags = document.createElement("span");
+      tags.className = "tag";
+      tags.textContent = post.tags.join(" ");
+      headingRow.appendChild(tags);
+    }
+
     headingRow.appendChild(heading);
 
     const body = document.createElement("div");
