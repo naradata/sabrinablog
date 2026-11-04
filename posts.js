@@ -13,6 +13,7 @@ const POSTS = [
   {
     id: "sacrifice",
     title: "Sacrifice",
+    archived: true,
     body: `
 I spoke with Pepper today and I expressed my interest in joining a lab this year. I told him about my language acquisition models idea and he gave me a lot of great info. He pretended to be a professor for a bit and asked me why my models would be any better than someone else’s and if each of the models follow some sort of basis instead of independently built. He also told me that most people who do research either cite a bunch of resources and say “some other guy did this, here’s what I added onto it” and if you are egomaniacal enough, you will be able to make it only about what you added onto it. He said this is what my language models would be doing, and he affirmed this as better than the alternative which is spending your entire life arguing with yourself why you are not wrong, and you will write 800 page publications that make no sense to anybody around you. And you will wonder why you have no friends and no family. All for what- to defend your point? And then 20 years later someone looks at it and says “actually, this is wrong”. And that's all you get out of it.
 
@@ -28,6 +29,7 @@ My phone broke today. I took off my case because Revenue never had a case on his
   {
     id: "worst-feeling",
     title: "The Worst Feeling in the World",
+    archived: true,
     body: `
 “I know you’re really busy and that my thoughts are probably not that impressive or original but I was wondering if you’d be willing to um, read some things I’ve um. Written.”
 
@@ -50,6 +52,7 @@ The room goes silent. Robert has a big grin on his face. He shakes his head then
   {
     id: "confessions-schizophrenic",
     title: "Confessions of a Schizophrenic",
+    archived: true,
     body: `
 I write this in agony and pain and am thinking of suicide. Not a glamorous one though, one that is quiet and quick. I believe a quick suicide is a quiet one. Anything more than a bullet to the head would be far too much work and far too much pain. So I guess one must ask themselves, “do I really want to die? Is this pain truly so unbearable I must rid myself of a gift that is my own being, my own living?”. Of course not.
 
@@ -81,6 +84,7 @@ I will often find myself here again, and when that time does arrive, I will noti
   {
     id: "sellout",
     title: "Sellout",
+    archived: true,
     body: `
 James has a beautiful home that I have moved into ever since we got married. He has a gold wedding band, but I cannot remember what mine looks like. I met James when I was 22, him 39. We met in a hotel room, he was a bit shorter than I expected but much more handsome than his pictures. He gave me $2000 in cash and I made sure to make it worth his time. We talked a lot though, he seemed to see me as a real person more than a prostitute, and I appreciated that, although we both knew what this was. However, as time went on the hours added up and it just seemed to make the most sense to get married. I would live in his house, and no matter what I would always have money. Money to do things. Money to make myself feel important in any way I wanted, because money can truly buy anything. Which meant I wouldn't need him for anything emotional- in fact, he married me under the assumption that neither of us would be faithful to each other and that was ok.
 
@@ -102,6 +106,7 @@ This conversation is retarded because you treat intelligence as something of hig
   {
     id: "indie-journalists",
     title: "Indie Journalists Against Big Interviewees",
+    archived: true,
     body: `
 
 
@@ -158,6 +163,7 @@ This conversation is retarded because you treat intelligence as something of hig
   {
     id: "post-two",
     title: "Goodness",
+    archived: true,
     body: `
 A long time ago I had this belief that I would never be good at anything, because I could never love anything enough to be good at it. I thought I had found it with counterstrike because of how rewarding the game was, but I always felt overwhelmed by the fact that I was probably too old to try to play professionally or even be good at it. Not to diminish anybody who is good at Counterstrike, in fact, I respect and admire those who are good at Counterstrike. It's not just a video game to me and in a way I wish I discovered this years ago, when I truly could have sat in my room for 8 hrs at a time grinding Faceit games back to back to back without having to face real life, serious, adult consequences. And the more adultlike I become the more and more afraid I am that I will never be good at anything.
 

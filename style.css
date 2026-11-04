@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
   color: #323436;
 }
@@ -301,7 +301,7 @@ a.page-title:hover {
   margin-top: 32px;
   margin-bottom: 34px;
   max-width: 70%;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12.5px;
   line-height: 1.5;
 }
