@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
-  color: #323436;
+  color: #3c4242;
 }
 
 /* --- home page: text on the left, photo in the upper right --- */
@@ -25,7 +25,7 @@ body {
 }
 
 .site-title {
-  color: #e8140c;
+  color: #345775;
   font-size: 2.1rem;
   font-weight: bold;
   margin: 0;
@@ -58,7 +58,7 @@ body {
 }
 
 .links a {
-  color: #0814bd;
+  color: #3c4242;
   text-decoration: none;
   font-size: 0.95rem;
   padding: 1px 4px;
@@ -73,7 +73,7 @@ body {
 }
 
 .socials a {
-  color: #0814bd;
+  color: #3c4242;
   text-decoration: none;
   font-size: 0.7rem;
   padding: 1px 4px;
@@ -107,7 +107,7 @@ body {
 
 .page-header.left .page-title {
   font-size: 1.25rem;
-  color: #000000;
+  color: #3c4242;
 }
 
 .archive-footer {
@@ -119,7 +119,7 @@ body {
 }
 
 .site-title.small a {
-  color: #e8140c;
+  color: #345775;
   text-decoration: none;
   padding: 1px 4px;
 }
@@ -133,7 +133,7 @@ body {
 }
 
 .page-nav .side-link {
-  color: #323436;
+  color: #3c4242;
   text-decoration: none;
   font-size: 0.8rem;
   margin-top: 10px;
@@ -151,14 +151,14 @@ body {
   font-size: 3rem;
   font-weight: bold;
   line-height: 1;
-  color: #0814bd;
+  color: #3c4242;
   text-decoration: none;
 }
 
 .archive-link {
   font-size: 0.55rem;
   font-weight: bold;
-  color: #323436;
+  color: #3c4242;
   text-decoration: none;
   border: 1px solid #999999;
   border-radius: 0;
@@ -192,7 +192,7 @@ a.page-title:hover {
 .translate-btn {
   font-family: inherit;
   font-size: 0.6rem;
-  color: #323436;
+  color: #3c4242;
   background: none;
   border: 1px solid #999999;
   border-radius: 0;
@@ -207,7 +207,7 @@ a.page-title:hover {
 }
 
 .post-title {
-  color: #0814bd;
+  color: #3c4242;
   font-size: 0.95rem;
   font-weight: bold;
   margin: 0 0 12px;
@@ -216,7 +216,7 @@ a.page-title:hover {
 }
 
 .post-title a {
-  color: #0814bd;
+  color: #3c4242;
   text-decoration: underline;
   text-underline-offset: 6px;
   padding: 1px 4px;
@@ -224,76 +224,8 @@ a.page-title:hover {
 
 /* the open post's title stays highlighted */
 .post-title a.open {
-  background: #0814bd;
+  background: #3c4242;
   color: #ffffff;
-}
-
-/* --- links: highlight that blinks while hovered --- */
-
-.page-nav .side-link,
-.site-title.small a,
-.archive-link {
-  --blink-bg: #000000;
-  --blink-fg: #ffffff;
-}
-
-.links a,
-.socials a {
-  --blink-bg: #0814bd;
-  --blink-fg: #ffffff;
-}
-
-.links a,
-.socials a,
-.post-title a {
-  --base-fg: #0814bd;
-}
-
-.page-nav .side-link,
-.archive-link {
-  --base-fg: #323436;
-}
-
-.site-title.small a {
-  --base-fg: #e8140c;
-}
-
-.post-title a {
-  --blink-bg: #0814bd;
-  --blink-fg: #ffffff;
-}
-
-.links a:hover,
-.socials a:hover,
-.page-nav .side-link:hover,
-.site-title.small a:hover,
-.archive-link:hover,
-.post-title a:hover {
-  background-color: var(--blink-bg);
-  color: var(--blink-fg);
-  animation: link-blink 0.8s step-end infinite;
-}
-
-@keyframes link-blink {
-  0% {
-    background-color: var(--blink-bg);
-    color: var(--blink-fg);
-  }
-  50% {
-    background-color: transparent;
-    color: var(--base-fg);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .links a:hover,
-  .socials a:hover,
-  .page-nav .side-link:hover,
-  .site-title.small a:hover,
-  .archive-link:hover,
-  .post-title a:hover {
-    animation: none;
-  }
 }
 
 .post-body {
