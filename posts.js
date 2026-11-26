@@ -19,6 +19,25 @@
 
 const POSTS = [
   {
+    id: "the-choice-recension-ii",
+    date: "2026-11-26 03:07",
+    title: "The Choice: Recension II, Fascicle I",
+    body: `
+DAY ONE
+I have spent many years in this city. I am not unfamiliar with the sorts of people who roam its streets, drink in its public houses, and stand in its shops contemplating what to buy. I notice the trimmings along each of the buildings; the clouds that seem to hover over this city without end, and the rain they forever threaten. I notice the children chasing one another in the schoolyard, their laughter carrying beyond the gate; the women walking down the street in their dresses, arm in arm, giggling to one another. I do not envy them. I only mention them because I noticed them, and I notice everything.
+
+I am comforted by all of these things as I travel alone. But Solitude has always waited for me. She came into being when I did. She has always been here, and she has never once shown any malice; it would not be fair of her to do such a thing. Yet the mortals, it seems, do not think kindly of her. She drives them mad. They become hungry and desperate creatures; their minds rot with terror, the fear of loneliness so prevalent in their every day that they sacrifice themselves to be loved. But it is not love in any real sense, for I have seen love and I know what it looks like, and this is far from it. In a way, it is no different from prostitution. They sell so much of themselves, the women especially. I have seen the most brilliant women sacrifice their intelligence, or at least the display of it, to forget that Solitude exists. And that only beckons her nearer.
+
+Some of the loneliest people are the ones who are married.
+
+I see traces of Solitude all along these streets, infecting the city and the people in it. I see them in the public houses, in one of which I now sit. There is a man at the end of the bar, nearly bald, with a stomach grown fat, and his eyes fixed upon the floor. To my right sits another, who has asked for bitter, then mild, then bitter again. He is afraid, I think, that whichever he drinks will be the wrong one; that the other will sit in his mind all night, tasting better for never having been tasted.
+
+This is how man is: fickle and idle. I watch him waste his life over and over again, condemned to wander the wilderness for years, with nothing productive or worthwhile to show for it. Hannibal did not finish his victory, and I find this humorous. To win so greatly, and then to be so irresolute that the victory meant nothing in the end.
+
+I pity man. I pity man, yet at times I am disgusted by him. Particularly by this individual sitting beside me. Offered another drink, he still cannot decide: bitter, then mild, then bitter once more. His mind scatters like a hunted deer's, ears pricking at every rustling leaf, ready to bolt, for flight is its only defence. At length he stands and goes out to smoke a cigarette, reaching for some outside substance to lend him a strength he never had. So desperate beneath the weight of this decision, a thing so trivial, and yet so significant to him. He cannot seem to grasp that it is only a drink. Nor does he know, as I do, that before the night is out he will have had a great many more.
+`
+  },
+  {
     id: "the-choice",
     date: "2026-11-26 01:08",
     title: "THE CHOICE (URTEXT)",
