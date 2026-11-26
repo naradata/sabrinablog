@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>archive - sabrina081476</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="banner">
+      <img id="banner-img" src="images/bluevalentime.jpg" alt="">
+      <h1><a id="banner-link" href="archive">archive</a></h1>
+    </header>
+
+    <div class="columns">
+      <main>
+        <article class="post">
+          <h3 id="post-title"></h3>
+          <p class="post-dateline" id="post-date"></p>
+          <div id="post-body"></div>
+        </article>
+      </main>
+
+      <aside class="sidebar">
+        <nav class="sidebar-links">
+          <a href="/">home</a>
+          <a href="posts">posts</a>
+          <a href="gallery">gallery</a>
+          <a href="archive">archive</a>
+        </nav>
+      </aside>
+    </div>
+  </div>
+
+  <script src="dates.js"></script>
+  <script src="posts.js"></script>
+  <script src="archive-posts.js"></script>
+  <script>
+    // Shows the post named in the link, e.g. post?id=godsend.
+    // New posts get the posts banner; old ones keep the archive banner.
+    const id = new URLSearchParams(location.search).get("id");
+    const current = POSTS.find((p) => p.id === id);
+    const post = current || ARCHIVE.find((p) => p.id === id);
+    if (current) {
+      document.getElementById("banner-img").src = "images/roma.jpg";
+      const bannerLink = document.getElementById("banner-link");
+      bannerLink.href = "posts";
+      bannerLink.textContent = "posts";
+    }
+    const titleEl = document.getElementById("post-title");
+    const bodyEl = document.getElementById("post-body");
+
+    function renderBody(text) {
+      bodyEl.textContent = "";
+      for (const paragraph of text.trim().split(/\n\s*\n/)) {
+        const p = document.createElement("p");
+        // a single line break inside a paragraph stays a line break
+        paragraph.split("\n").forEach((line, index) => {
+          if (index > 0) p.appendChild(document.createElement("br"));
+          p.appendChild(document.createTextNode(line));
+        });
+        bodyEl.appendChild(p);
+      }
+    }
+
+    if (post) {
+      document.title = post.title + " - sabrina081476";
+      titleEl.textContent = post.title;
+      renderBody(post.body);
+      if (post.date) {
+        document.getElementById("post-date").textContent = formatDate(post.date);
+      }
+
+      if (post.translation) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "translate-btn";
+        button.textContent = "Перевести";
+        let translated = false;
+        button.addEventListener("click", () => {
+          translated = !translated;
+          renderBody(translated ? post.translation : post.body);
+          button.textContent = translated ? "English" : "Перевести";
+        });
+        titleEl.after(button);
+      }
+    } else {
+      titleEl.textContent = "Post not found";
+      renderBody("This post doesn't exist. Go back to the archive to see what's here.");
+    }
+  </script>
+</body>
+</html>

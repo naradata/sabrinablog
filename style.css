@@ -134,3 +134,163 @@ main {
     padding-top: 0;
   }
 }
+
+/* --- archive: a plain list of post titles --- */
+
+.archive-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.archive-list li {
+  margin-bottom: 6px;
+}
+
+/* --- a single archived post --- */
+
+.post h3 {
+  margin: 0 0 14px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* date beside a title on the posts list */
+.post-date {
+  margin-left: 12px;
+  color: #2f2f6b;
+}
+
+/* date under the title on a post's page */
+.post .post-dateline {
+  margin: -10px 0 14px;
+  color: #2f2f6b;
+}
+
+.post .post-dateline:empty {
+  display: none;
+}
+
+.translate-btn {
+  margin: 0 0 14px;
+  padding: 1px 6px;
+  border: 1px solid #2f2f6b;
+  border-radius: 0;
+  background: #ffffff;
+  color: #2f2f6b;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* --- gallery: photos in three columns, clicking opens the full size --- */
+
+.gallery-grid {
+  columns: 3;
+  column-gap: 8px;
+}
+
+.gallery-grid a {
+  display: block;
+  margin-bottom: 8px;
+  break-inside: avoid;
+}
+
+.gallery-grid img {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .gallery-grid {
+    columns: 2;
+  }
+}
+
+/* --- home: about me --- */
+
+.about h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.about-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin-bottom: 28px;
+}
+
+.about h3 {
+  margin: 28px 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.about h4 {
+  margin: 18px 0 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2f2f6b;
+}
+
+.about p {
+  margin: 0 0 12px;
+}
+
+.about pre {
+  margin: 0 0 12px;
+  padding: 8px 10px;
+  overflow-x: auto;
+  background: #f3f3f6;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* "what i am doing right now": essays opens into a list */
+.now-list {
+  margin: 0 0 12px;
+}
+
+.now-list summary {
+  color: #2f2f6b;
+  cursor: pointer;
+  list-style: none;
+}
+
+.now-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.now-list ul {
+  margin: 4px 0 8px;
+  padding-left: 16px;
+  list-style: none;
+}
+
+/* --- antilibrary: the opening excerpt --- */
+
+.excerpt {
+  margin: 0 0 28px;
+  padding-left: 14px;
+  border-left: 2px solid #2f2f6b;
+}
+
+.excerpt p {
+  margin: 0 0 10px;
+}
+
+.excerpt cite {
+  font-style: normal;
+}
+
+.book-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.book-list li {
+  margin-bottom: 4px;
+}

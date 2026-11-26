@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>archive - sabrina081476</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="banner">
+      <img src="images/bluevalentime.jpg" alt="">
+      <h1><a href="archive">archive</a></h1>
+    </header>
+
+    <div class="columns">
+      <main>
+        <ul class="archive-list" id="archive-list"></ul>
+      </main>
+
+      <aside class="sidebar">
+        <nav class="sidebar-links">
+          <a href="/">home</a>
+          <a href="posts">posts</a>
+          <a href="gallery">gallery</a>
+          <a href="archive">archive</a>
+        </nav>
+      </aside>
+    </div>
+  </div>
+
+  <script src="archive-posts.js"></script>
+  <script>
+    // one link per post, each opening that post on its own page
+    const list = document.getElementById("archive-list");
+    for (const post of ARCHIVE) {
+      const item = document.createElement("li");
+      const link = document.createElement("a");
+      link.href = "post?id=" + encodeURIComponent(post.id);
+      link.textContent = post.title;
+      item.appendChild(link);
+      list.appendChild(item);
+    }
+  </script>
+</body>
+</html>

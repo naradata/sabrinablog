@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gallery - sabrina081476</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="banner">
+      <img src="images/Memories-of-Murder-Featured.jpg" alt="">
+      <h1><a href="gallery">gallery</a></h1>
+    </header>
+
+    <div class="columns">
+      <main class="gallery-grid" id="gallery-grid"></main>
+
+      <aside class="sidebar">
+        <nav class="sidebar-links">
+          <a href="/">home</a>
+          <a href="posts">posts</a>
+          <a href="gallery">gallery</a>
+          <a href="archive">archive</a>
+        </nav>
+      </aside>
+    </div>
+  </div>
+
+  <script src="gallery.js"></script>
+  <script>
+    // small thumbnails in the grid; clicking one opens the full photo
+    const grid = document.getElementById("gallery-grid");
+    for (const filename of GALLERY) {
+      const link = document.createElement("a");
+      link.href = "images/gallery/" + encodeURIComponent(filename);
+      const img = document.createElement("img");
+      img.src = "images/gallery-thumbs/" + encodeURIComponent(filename);
+      img.alt = filename.replace(/\.[^.]+$/, "");
+      img.loading = "lazy";
+      link.appendChild(img);
+      grid.appendChild(link);
+    }
+  </script>
+</body>
+</html>
