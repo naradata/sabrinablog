@@ -303,13 +303,15 @@ main {
   font-weight: bold;
 }
 
-.book-page img {
-  display: block;
-  width: 70%;
-  margin-bottom: 12px;
+/* two images per row, in order left to right */
+.image-pairs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-items: start;
 }
 
-/* another 30% smaller than the rest */
-.book-page img.smaller {
-  width: 49%;
+.image-pairs img {
+  display: block;
+  width: 100%;
 }
