@@ -308,3 +308,8 @@ main {
   width: 70%;
   margin-bottom: 12px;
 }
+
+/* another 30% smaller than the rest */
+.book-page img.smaller {
+  width: 49%;
+}
